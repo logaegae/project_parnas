@@ -93,11 +93,23 @@ div.sub-lnb-wrap{
 .lnb-area > li{
     float: left;
 }
-
-.lnb-area > li{
-    background: url("../images/sub/common/right_arrow.png") 100% 0 no-repeat;
+.lnb-area > li img{
+    vertical-align: initial;
 }
+.lnb-area > li{
+    background: url("../images/sub/common/right_arrow.png") 100% 6px no-repeat;
+}
+.lnb-area > li > a, .lnb-area > li > a:hover {
+    color:#a7a7a7;
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    font-family: 'Dotum';
+    font-weight: normal;
+}
+.lnb-area > li > a > strong{
+    color:#787878;
 
+}
 .lnb-area > li:first-child{
     width: 22px;
 }
@@ -116,7 +128,7 @@ div.contents-area{
 
 .content-title{
     font-family: 'Nanum Gothic';
-    font-size: 22px;
+    font-size: 23px;
     font-weight: 800;
     color: #3a3a3a;
     margin: 0 0 11px 0 !important;
@@ -124,7 +136,7 @@ div.contents-area{
 
 .content-subtitle{
     font-family: 'Nanum Gothic';
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     color: #3a3a3a;
     margin: 0 0 29px 0 !important;
@@ -708,3 +720,67 @@ ul.m-ways{
         margin: 0 auto;
     }
 }
+/*서브 페이지: 타워소개 > 파르나스 갤러리*/
+
+.gallery_slide .left_btn, .gallery_slide .right_btn{
+    width:40px;
+    height:67px;
+    margin-top:-33px;
+    display:inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    left:50%;
+}
+.gallery_slide .left_btn{
+    margin-left:-20px;
+    background: url('../images/sub/left_btn.png') no-repeat center center;
+}
+.gallery_slide .right_btn{
+    margin-right:-20px;
+    background: url('../images/sub/right_btn.png') no-repeat center center;
+}
+.gallery_slide .item{
+    width:1024px;
+    height:660px;
+    overflow:hidden;
+}
+.gallery_slide #gallery_slide_box{
+    border-bottom:3px #b49265 solid;
+}
+.gallery_btns{
+    border-bottom: 1px #bdbdbd solid;
+    font-size: 0;
+    margin-bottom:145px;
+}
+.gallery_btns > span{
+    width:25%;
+    height:65px;
+    display:inline-block;
+    padding:15px 0;
+}
+.gallery_btns > span > a{
+    height:35px;
+    width:100%;
+    display:inline-block;
+    font-size:16px;
+    color:rgba(0,0,0,0.5);
+    font-weight:bold;
+    line-height: 35px;
+    border-left:1px #e6e6e6 solid;
+}
+.gallery_btns > span:first-child > a{
+    border-left:0px;
+}
+.gallery_btns .active a{
+    color:#000;
+}
+.gallery_btns .active i{
+    background:url("../images/sub/up_arrow.png") no-repeat center center;
+    display:inline-block;
+    width:17px;
+    height:17px;
+    margin-left:5px;
+    vertical-align: text-bottom;
+}
+/*서브 페이지: 시설안내 > 층별입주현황*/

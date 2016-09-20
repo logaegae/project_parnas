@@ -135,155 +135,61 @@
 
 
     <!-- main section -->
-    <div id="sub-main" class="locate-main">
+    <div id="sub-main" class="intro-main">
         <div class="container-fluid">
-            <!-- banner area -->
-            <!-- banner: pc version -->
-            <div class="sub-banner">
-                <span><img src="images/sub/common/banner.png" alt="타워소개 배너" class="img-responsive" /></span>
-            </div>
-            <!-- banner: mobile version -->
-            <div class="m-sub-banner">
-                <span><img src="images/sub/common/m_banner.png" alt="타워소개 배너" class="img-responsive" /></span>
-            </div>
-            <!-- lnb area -->
-            <div class="sub-lnb">
-                <div class="sub-lnb-wrap">
-                    <h2 class="lnb-title">파르나스 찾아오시는길</h2>
-                    <ul class="lnb-area">
-                        <li><a href="main.html"><img src="images/sub/common/home_icon.png" alt="홈 바로 가기 아이콘"></a></li>
-                        <li><a href="#">파르나스타워</a></li>
-                        <li><a href="#"><strong>파르나스 찾아오시는길</strong></a></li>
-                    </ul>
+            <!-- main-area -->
+            <!-- main top -->
+            <div class="intro-main-top">
+                <!-- banner: pc version -->
+                <div class="sub-banner">
+                    <span><img src="images/sub/common/banner.png" alt="타워소개 배너" class="img-responsive" /></span>
                 </div>
-            </div>
-            <!-- sub contents details -->
-            <div class="sub-wrap">
-                <!-- contents area -->
-                <div class="contents-area">
-                    <div class="top-area">
-                        <h3 class="content-title-locate">Address</h3>
-                        <p class="content-subtitle-locate">서울특별시 강남구 테헤란로 521 파르나스타워</p>
-                        <p class="content-detail-locate">TEL : 02-559-7094</p>
-                        <div class="maps">
-                            <ul>
-                                <li><a href="http://map.daum.net/?urlX=513447&urlY=1113843&itemId=8161840&q=%EA%B7%B8%EB%9E%9C%EB%93%9C%EC%9D%B8%ED%84%B0%EC%BB%A8%ED%8B%B0%EB%84%A8%ED%83%88%20%EC%84%9C%EC%9A%B8%ED%8C%8C%EB%A5%B4%EB%82%98%EC%8A%A4&srcid=8161840&map_type=TYPE_MAP&from=roughmap"><img src="images/sub/locate/daum_map.png" alt="다음 지도"></a></li>
-                                <li><a href="http://map.naver.com/?dlevel=11&pinType=site&pinId=34354706&x=127.0612026&y=37.5096482&enc=b64"><img src="images/sub/locate/naver_map.png" alt="네이버 지도"></a></li>
-                                <li><a href="https://www.google.co.kr/maps/search/%ED%8C%8C%EB%A5%B4%EB%82%98%EC%8A%A4+%ED%83%80%EC%9B%8C/@37.5089993,127.0586214,17z/data=!3m1!4b1"><img src="images/sub/locate/google_map.png" alt="구글 지도"></a></li>
-                            </ul>
-                        </div>
+                <!-- banner: mobile version -->
+                <div class="m-sub-banner">
+                    <span><img src="images/sub/common/m_banner.png" alt="타워소개 배너" class="img-responsive" /></span>
+                </div>
+                <!-- lnb area -->
+                <div class="sub-lnb">
+                    <div class="sub-lnb-wrap">
+                        <h2 class="lnb-title">임대정보</h2>
+                        <ul class="lnb-area">
+                            <li><a href="main.html"><img src="images/sub/common/home_icon.png" alt="홈 바로 가기 아이콘"></a></li>
+                            <li style="width:52px"><a href="#">임대정보</a></li>
+                            <li><a href="#"><strong>임대정보</strong></a></li>
+                        </ul>
                     </div>
-                    <!-- daum map load -->
-                    <div class="locate-area">
-                    <!--
-                    * Daum 지도 - 약도서비스
-                    * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
-                    * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
-                    -->
-                    <!-- 1. 약도 노드 -->
-                    <div id="daumRoughmapContainer1469597541149" class="root_daum_roughmap root_daum_roughmap_landing daum_map"></div>
-                    <!-- 2. 설치 스크립트 -->
-                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
-                    <!-- 3. 실행 스크립트 -->
-                    <script charset="UTF-8">
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1469597541149",
-                        "key" : "c7vm",
-                        "mapWidth" : "1024",
-                        "mapHeight" : "579"
-                    }).render();
-                    </script>
                 </div>
-            </div>
-            <!-- transport -->
-            <div class="locate-way">
-                <h3 class="way-title">오시는길</h3>
-                <!-- ways : pc version -->
-                <ul class="pc-ways">
-                    <li><img src="images/sub/locate/bus_station.png" class="img-responsive" alt="BUS STATION/한국무역센터, 삼성역 23-201, 23-199/삼성역 23-804, 23-781/그랜드인터컨티넨탈호텔 23-929/삼성역7번출구 23-923"></li>
-                    <li><img src="images/sub/locate/subway.png" class="img-responsive" alt="2호선 삼성역 5, 6번 출구/9호선 봉은사역 7번 출구"></li>
-                    <li><img src="images/sub/locate/bus.png" class="img-responsive" alt="간선 143, 146, 333, 341, 360, 740, N13, N61/지선 2413, 4419, 3411/직행 9407, 9414, 9507, 9607, 좌석 1100, 1700, 2000, 2000-1, 7007, 9414/급행 8001/마을 강남01, 강남06, 강남07, 강남08, 남01/공항 6000, 6006, 6103, 6104, 6704"></li>
-                </ul>
-                <!-- ways : mobile version -->
-                <ul class="m-ways">
-                    <li><img src="images/sub/locate/m_subway.png" class="img-responsive" alt="2호선 삼성역 5, 6번 출구/9호선 봉은사역 7번 출구"></li>
-                    <li><img src="images/sub/locate/m_bus_station.png" class="img-responsive" alt="BUS STATION/한국무역센터, 삼성역 23-201, 23-199/삼성역 23-804, 23-781/그랜드인터컨티넨탈호텔 23-929/삼성역7번출구 23-923"></li>
-                    <li><img src="images/sub/locate/m_bus.png" class="img-responsive" alt="간선 143, 146, 333, 341, 360, 740, N13, N61/지선 2413, 4419, 3411/직행 9407, 9414, 9507, 9607, 좌석 1100, 1700, 2000, 2000-1, 7007, 9414/급행 8001/마을 강남01, 강남06, 강남07, 강남08, 남01/공항 6000, 6006, 6103, 6104, 6704"></li>
-                </ul>
-            </div>
-            <!-- sns & option link: pc version -->
-            <div class="sub-pc-options">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="images/main/twitter.png" alt="twitter icon" class="img-responsive" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/main/facebook.png" alt="facebook icon" class="img-responsive" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/main/blog.png" alt="naver blog icon" class="img-responsive" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/main/mobile_web.png" alt="mobile web icon" class="img-responsive" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- sns & option link: mobile version -->
-            <div class="sub-m-options">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="images/main/m_twitter.png" alt="twitter icon" class="img-responsive" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/main/m_facebook.png" alt="facebook icon" class="img-responsive" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/main/m_blog.png" alt="naver blog icon" class="img-responsive" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/main/m_mobile_web.png" alt="mobile web icon" class="img-responsive" />
-                        </a>
-                    </li>
-                </ul>
+                <!-- sub contents details -->
+                <div class="sub-top-wrap">
+                    <!-- contents area -->
+                    <div class="contents-area">
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
-<!-- footer -->
-<!-- footer: pc version -->
-<div id="sub-footer" class="sub-pc-footer">
-    <address>
-        <span>parnas tower, 521, Tehran-ro, Gangnam-gu, Seoul, 110-170 / Tel : +82-2-559-7094 / E-mail : kgjo@parnas.co.kr<br>© 2016 <strong>PARNAS TOWER</strong> All rights reserved.</span>
-    </address>
-</div>
-<!-- footer: mobile version -->
-<div id="sub-m-footer" class="sub-m-footer">
-    <address>
-        <span><img src="images/common/m_address.png" class="img-responsive" alt="parnas tower, 521, Tehran-ro, Gangnam-gu, Seoul, 110-170 / Tel : +82-2-559-7094 / E-mail : kgjo@parnas.co.kr &copy; 2016 PARNAS TOWER All rights reserved."></span>
-    </address>
-</div>
+    <!-- footer -->
+    <!-- footer: pc version -->
+    <div id="sub-footer" class="sub-pc-footer">
+        <address>
+            <span>parnas tower, 521, Tehran-ro, Gangnam-gu, Seoul, 110-170 / Tel : +82-2-559-7094 / E-mail : kgjo@parnas.co.kr<br>© 2016 <strong>PARNAS TOWER</strong> All rights reserved.</span>
+        </address>
+    </div>
+    <!-- footer: mobile version -->
+    <div id="sub-m-footer" class="sub-m-footer">
+        <address>
+            <span><img src="images/common/m_address.png" class="img-responsive" alt="parnas tower, 521, Tehran-ro, Gangnam-gu, Seoul, 110-170 / Tel : +82-2-559-7094 / E-mail : kgjo@parnas.co.kr &copy; 2016 PARNAS TOWER All rights reserved."></span>
+        </address>
+    </div>
 
 
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/common.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/common.js"></script>
 </body>
 </html>
