@@ -1,0 +1,710 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*서브 페이지: 공통*/
+div.main{
+    padding-top: 74px;
+}
+
+div.intro-main,
+div.locate-main{
+    padding-top: 74px !important;
+}
+
+div.sub-banner{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+div.sub-banner > span > img{
+    margin: 0 auto;
+}
+
+div.m-sub-banner{
+    display: none;
+}
+
+div.sub-lnb{
+    width: 100%;
+    height: 59px;
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+div.sub-lnb-wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+div.intro-main-bot{
+    clear: both;
+}
+
+div.sub-top-wrap,
+div.sub-mid-wrap,
+div.sub-bot-wrap,
+div.sub-add-wrap{
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.intro-main-mid{
+    margin-top: 63px;
+}
+
+div.intro-main-bot{
+    padding-top: 92px;
+}
+
+div.sub-pc-options{
+    position: absolute;
+    top: 27px;
+    right: -3.04%;
+}
+
+div.sub-pc-options > ul > li{
+    padding: 3px 0;
+}
+
+div.sub-m-options{
+    display: none;
+}
+
+div.sub-lnb-wrap{
+    position: relative;
+}
+
+.lnb-title{
+    font-family: 'Nanum Gothic';
+    font-size: 19px;
+    font-weight: 800;
+    word-spacing: -0.5px;
+    color: #3a3a3a;
+    margin: 0 0 0 1px !important;
+    padding: 20px 0;
+}
+
+.lnb-area{
+    position: absolute;
+    top: 45.76%;
+    right: 0.19%;
+}
+
+.lnb-area > li{
+    float: left;
+}
+
+.lnb-area > li{
+    background: url("../images/sub/common/right_arrow.png") 100% 0 no-repeat;
+}
+
+.lnb-area > li:first-child{
+    width: 22px;
+}
+.lnb-area > li:first-child+li,
+.lnb-area > li:first-child+li+li{
+    margin-left: 6px;
+}
+
+.lnb-area > li:last-child{
+    background: 0 none;
+}
+
+div.contents-area{
+    padding-top: 56px;
+}
+
+.content-title{
+    font-family: 'Nanum Gothic';
+    font-size: 22px;
+    font-weight: 800;
+    color: #3a3a3a;
+    margin: 0 0 11px 0 !important;
+}
+
+.content-subtitle{
+    font-family: 'Nanum Gothic';
+    font-size: 13px;
+    font-weight: 500;
+    color: #3a3a3a;
+    margin: 0 0 29px 0 !important;
+}
+
+.content-detail{
+    font-family: 'Nanum Gothic';
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #3f3f3f;
+    margin: 0 0 45px 0 !important;
+}
+
+div.wrap_controllers{
+    display: none;
+}
+
+@media (max-width: 1315px){
+    div.sub-lnb-wrap{
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 855px){
+    div.sub-lnb-wrap{
+        width: 76% !important;
+    }
+}
+
+@media (max-width: 768px){
+    div.sub-lnb-wrap{
+        width: 93.5% !important;
+    }
+}
+
+@media (max-width: 640px){
+    div.sub-banner{
+        display: none;
+    }
+
+    div.m-sub-banner{
+        display: block;
+    }
+
+    div.m-sub-banner > span > img{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px){
+    div.sub-lnb-wrap{
+        width: 92.5% !important;
+    }
+}
+
+@media (max-width: 550px){
+    div.sub-lnb-wrap{
+        width: 91.5% !important;
+    }
+}
+
+@media (max-width: 500px){
+    div.sub-lnb-wrap{
+        width: 90.5% !important;
+    }
+}
+
+@media (max-width: 450px){
+    div.sub-lnb-wrap{
+        width: 89.5% !important;
+    }
+}
+
+@media (max-width: 400px){
+    div.sub-lnb-wrap{
+        width: 88.5% !important;
+    }
+}
+
+@media (max-width: 350px){
+    div.sub-lnb-wrap{
+        width: 87.5% !important;
+    }
+}
+
+/*서브 페이지: 타워소개 > 파르나스 소개*/
+div.intro-main ul.lnb-area > li:first-child+li{
+    width: 75px;
+}
+
+div.pc-mid-area > a{
+    display: block;
+    width: 27.24%;
+    margin: 43px auto 0;
+}
+
+div.m-mid-area{
+    display: none;
+}
+
+div.intro-main-mid{
+    padding-top: 65px;
+    background-color: #f7f7f7;
+}
+
+div.intro-main-mid-contents{
+    padding-top: 56px;
+    margin: 0 auto !important;
+}
+
+.tower-model{
+    float: left;
+}
+
+table.construction{
+    float: right;
+    width: 474px;
+    text-align: left;
+    padding-bottom: 99px;
+}
+
+div.clearing{
+    clear:both;
+    padding-bottom: 99px;
+}
+
+table.construction tr:first-child{
+    border-top: 2px #000 solid !important;
+}
+
+table.construction tr:last-child{
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+table.construction td{
+    font-size: 11.6px;
+    line-height: 32px;
+    padding: 10px 0 !important;
+}
+
+td.table-title{
+    width: 123px;
+}
+
+div.intro-main-bot-contents{
+    margin-top: 52px;
+}
+
+div.intro-main-bot-contents > span{
+    display: block;
+}
+
+div.intro-main-bot-contents > span:first-child{
+    margin-bottom: 39px;
+}
+
+div.intro-main-bot-contents > span:first-child+span{
+    margin-bottom: 61px;
+}
+
+div.intro-main-bot-contents > span:last-child{
+    margin-bottom: 50px;
+
+}
+.note{
+    background-color:#faf4ec;
+    padding: 40px 0 50px;
+
+}
+#note_title{
+    float:left;
+    width:20%;
+    display:block;
+    text-align:center;
+}
+#note_content{
+    float:right;
+    width:79%;
+    display:block;
+    border-left:1px #e8dbcb solid;
+}
+.note p{
+    font-size:14px;
+    line-height:22px;
+    font-family: 'Nanum Gothic';
+    color:#3f3f3f;
+    text-align:left;
+    margin:0px;
+    font-weight:600;
+    padding:0 70px 0 50px;
+    letter-spacing:-0.5px;
+}
+.note p em{
+    font-size:18px;
+    line-height:30px;
+    font-style: normal;
+    font-weight:800;
+        vertical-align: bottom;
+}
+.note small{
+    text-indent:35px;
+    margin-top: -5px;
+    display:block;
+}
+#note_title{
+    color:#9f7946;
+    font-size:25px;
+    font-family: 'Nanum Gothic';
+    font-weight:700;
+}
+div.intro-main-bot-contents > span > img{
+    margin: 0 auto;
+}
+
+div.intro-main-add{
+    background-color: #f7f7f7;
+}
+
+div.intro-main-add-contents > ul{
+    margin: 0 !important;
+    padding-bottom: 129px;
+}
+
+div.intro-main-add-contents > ul > li{
+    display: inline-block;
+    padding: 0 6px;
+}
+
+div.sub-add-wrap > .content-title{
+    padding-top: 63px !important;
+}
+
+div.sub-add-wrap > .content-subtitle{
+    margin-bottom: 59px !important;
+}
+
+@media (max-width: 1080px){
+    div.pc-mid-area{
+        display: none;
+    }
+
+    div.m-mid-area{
+        display: block;
+    }
+
+    div.m-mid-area > span > img{
+        margin: 0 auto 43px;;
+    }
+
+    .tower-model,
+    .construction{
+        float: none !important;
+        margin: 0 auto !important;
+    }
+
+    div.table-responsive{
+        border: 0 none;
+    }
+
+    .tower-model > img{
+        margin: 0 auto 27px;
+    }
+
+    .clearing{
+        padding-bottom: 80px !important;
+    }
+
+    div.intro-main-bot{
+        padding-top: 66px !important;
+    }
+
+    div.intro-main-bot-contents{
+        margin-top: 45px !important;
+    }
+
+    div.intro-main-bot-contents > span:first-child+span{
+        margin-bottom: 54px !important;
+    }
+
+    div.intro-main-bot-contents > span:last-child{
+        margin-bottom: 55px !important;
+    }
+
+    div.intro-main-add-contents > ul > li{
+        display: block;
+    }
+
+    div.intro-main-add-contents > ul > li > span > img{
+        margin: 15px auto;
+    }
+}
+@media (max-width: 767px){
+    #note_title{
+        width:100%;
+        padding-bottom:45px;
+    }
+    #note_content{
+        width:100%;
+        border:none;
+    }
+    #note_content > p > span, #note_content > p > small{
+        display:none;
+    }
+    .note{
+        padding:50px 0 58px;
+    }
+
+}
+@media (max-width: 500px){
+    .construction{
+        width: 96% !important;
+    }
+}
+
+
+/*서브 페이지: 타워소개 > 파르나스 찾아오시는길*/
+div.locate-main ul.lnb-area > li:first-child+li{
+    width: 75px;
+}
+
+div.sub-wrap{
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.locate-main ul.lnb-area > li:first-child+li{
+    width: 75px;
+}
+
+div.locate-main ul.lnb-area > li:first-child+li+li{
+    width: 123px;
+}
+
+.content-title-locate{
+    font-family: 'Nanum Gothic';
+    font-size: 18px;
+    font-weight: 800;
+    color: #3a3a3a;
+    margin: 0 0 25px 0 !important;
+}
+
+.content-subtitle-locate{
+    font-family: 'Nanum Gothic';
+    font-size: 15px;
+    font-weight: 500;
+    color: #878787;
+    margin: 0 0 12px 0 !important;
+}
+
+.content-detail-locate{
+    font-family: 'Nanum Gothic';
+    font-size: 12px;
+    font-weight: 700;
+    color: #3f3f3f;
+    margin: 0 0 25px 0 !important;
+}
+
+div.maps > ul{
+    margin-bottom: 35px !important;
+}
+
+div.maps > ul > li{
+    display: inline-block;
+    padding: 0 4.5px;
+}
+
+div.locate-area{
+    width: 100%;
+}
+
+div.locate-way{
+    position: relative;
+    padding: 79px 0 193px;
+}
+
+.way-title{
+    font-family: 'Nanum Gothic';
+    font-size: 21px;
+    font-weight: 800;
+    color: #3a3a3a;
+    margin: 0 0 60px 0 !important;
+}
+
+ul.pc-ways{
+    text-align: start !important;
+    margin-bottom: 0 !important;
+}
+
+ul.pc-ways > li:first-child{
+    float: left;
+}
+
+ul.pc-ways > li:first-child+li{
+    float: right;
+}
+
+ul.pc-ways > li:last-child{
+    clear: left;
+    padding-top: 77px;
+}
+
+ul.pc-ways > li:first-child,
+ul.pc-ways > li:last-child{
+    margin-left: 4px;
+}
+
+ul.pc-ways > li:first-child+li{
+    margin-right: 205px;
+}
+
+ul.m-ways{
+    display: none;
+}
+
+@media (max-width: 1200px){
+    div.daum_map{
+        width: 900px !important;
+        margin: 0 auto;
+    }
+
+    div.locate-way{
+        position: relative;
+        padding: 79px 0 136px;
+    }
+
+    ul.pc-ways{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    ul.pc-ways > li{
+        margin: 0 !important;
+        padding: 1% 0 !important;
+        float: none !important;
+    }
+
+    div.sub-pc-options{
+        display: none;
+    }
+
+    div.sub-m-options{
+        display: block;
+        padding-bottom: 54px;
+    }
+
+    div.sub-m-options > ul{
+        width: 384px;
+        margin: 0 auto;
+    }
+
+    div.sub-m-options > ul > li{
+        display: inline-block;
+        padding: 0 6.5px !important;
+    }
+}
+
+@media (max-width: 1000px){
+    div.daum_map{
+        width: 750px !important;
+        margin: 0 auto;
+    }
+
+    ul.pc-ways{
+        display: none;
+    }
+
+    ul.m-ways{
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    ul.m-ways > li{
+        padding: 1% 0;
+    }
+}
+
+@media (max-width: 850px){
+    div.daum_map{
+        width: 650px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 750px){
+    div.daum_map{
+        width: 600px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px){
+    div.daum_map{
+        width: 550px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 675px){
+    div.locate-way{
+        padding-top: 70px !important;
+    }
+
+    ul.m-ways{
+        display: block;
+        width: 93%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 650px){
+    div.daum_map{
+        width: 500px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px){
+    ul.lnb-area{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    div.daum_map{
+        width: 450px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 550px){
+    div.daum_map{
+        width: 400px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px){
+    div.daum_map{
+        width: 350px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 450px){
+    div.sub-m-options > ul{
+        width: 90%;
+    }
+
+    div.sub-m-options > ul > li{
+        width: 24%;
+    }
+
+    div.daum_map{
+        width: 300px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 400px){
+    div.daum_map{
+        width: 300px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 350px){
+    div.locate-way{
+        padding-bottom: 55px;
+    }
+
+    div.sub-m-options{
+        display: none;
+    }
+
+    div.daum_map{
+        width: 250px !important;
+        margin: 0 auto;
+    }
+}
