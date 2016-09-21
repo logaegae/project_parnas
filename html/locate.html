@@ -11,6 +11,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
     <link href="css/sub.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="fonts/iconfont/flaticon.css" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
@@ -68,9 +69,10 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="lang-area">
-                        <a href="#"><img src="images/common/lang-btn.png" alt="LANGUAGE"></a>
-                    </div>
+
+                </div>
+                <div class="lang-area">
+                    <a href="#"><img src="images/common/lang-btn.png" alt="LANGUAGE"></a>
                 </div>
             </div>
         </nav>
@@ -140,11 +142,11 @@
             <!-- banner area -->
             <!-- banner: pc version -->
             <div class="sub-banner">
-                <span><img src="images/sub/common/banner.png" alt="타워소개 배너" class="img-responsive" /></span>
+
             </div>
             <!-- banner: mobile version -->
             <div class="m-sub-banner">
-                <span><img src="images/sub/common/m_banner.png" alt="타워소개 배너" class="img-responsive" /></span>
+                <!-- <span><img src="images/sub/common/m_banner.png" alt="타워소개 배너" class="img-responsive" /></span> -->
             </div>
             <!-- lnb area -->
             <div class="sub-lnb">
@@ -199,16 +201,20 @@
             <div class="locate-way">
                 <h3 class="way-title">오시는길</h3>
                 <!-- ways : pc version -->
+                <div class="minimap">
+                    <img src="images/sub/minimap.png" alt="약도">
+                </div>
                 <ul class="pc-ways">
                     <li><img src="images/sub/locate/bus_station.png" class="img-responsive" alt="BUS STATION/한국무역센터, 삼성역 23-201, 23-199/삼성역 23-804, 23-781/그랜드인터컨티넨탈호텔 23-929/삼성역7번출구 23-923"></li>
-                    <li><img src="images/sub/locate/subway.png" class="img-responsive" alt="2호선 삼성역 5, 6번 출구/9호선 봉은사역 7번 출구"></li>
                     <li><img src="images/sub/locate/bus.png" class="img-responsive" alt="간선 143, 146, 333, 341, 360, 740, N13, N61/지선 2413, 4419, 3411/직행 9407, 9414, 9507, 9607, 좌석 1100, 1700, 2000, 2000-1, 7007, 9414/급행 8001/마을 강남01, 강남06, 강남07, 강남08, 남01/공항 6000, 6006, 6103, 6104, 6704"></li>
+                    <li><img src="images/sub/locate/subway.png" class="img-responsive" alt="2호선 삼성역 5, 6번 출구/9호선 봉은사역 7번 출구"></li>
                 </ul>
+                <div style="clear:both;width:100%;"></div>
                 <!-- ways : mobile version -->
                 <ul class="m-ways">
-                    <li><img src="images/sub/locate/m_subway.png" class="img-responsive" alt="2호선 삼성역 5, 6번 출구/9호선 봉은사역 7번 출구"></li>
-                    <li><img src="images/sub/locate/m_bus_station.png" class="img-responsive" alt="BUS STATION/한국무역센터, 삼성역 23-201, 23-199/삼성역 23-804, 23-781/그랜드인터컨티넨탈호텔 23-929/삼성역7번출구 23-923"></li>
-                    <li><img src="images/sub/locate/m_bus.png" class="img-responsive" alt="간선 143, 146, 333, 341, 360, 740, N13, N61/지선 2413, 4419, 3411/직행 9407, 9414, 9507, 9607, 좌석 1100, 1700, 2000, 2000-1, 7007, 9414/급행 8001/마을 강남01, 강남06, 강남07, 강남08, 남01/공항 6000, 6006, 6103, 6104, 6704"></li>
+                    <li><span class="way_circle gold">SUBWAY</span><span class="way_detail">2호선 삼성역 5, 6번 출구<br>9호선 봉은사역 7번 출구</span></li>
+                    <li><span class="way_circle gray">BUS<br>STATION</span><span class="way_detail"><mark style="margin-right: 41px;">한국무역센터 삼성역</mark> 23-201&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;23-199<br><mark style="margin-right:118px;">삼성역</mark> 23-804&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;23-781<br><mark>그랜드인터컨티넨탈호텔</mark> 23-929<br><mark style="margin-right: 73px;">삼성역7번출구</mark> 23-923</span></li>
+                    <li><span class="way_circle gray">BUS</span><span class="way_detail"><mark>간선</mark> 143, 146, 333, 341, 360, 740, N13, N61<br><mark>지선</mark> 2413, 4419, 3411<br><mark>직행</mark> 9407, 9414, 9507, 9607 <br><mark>좌석</mark> 1100, 1700, 2000, 2000-1, 7007, 9414<br><mark>급행</mark> 8001<br><mark>마을</mark> 강남01, 강남06, 강남07, 강남08, 남01<br><mark>공항</mark> 6000, 6006, 6103, 6104, 6704</span></li>
                 </ul>
             </div>
             <!-- sns & option link: pc version -->

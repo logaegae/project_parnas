@@ -7,13 +7,19 @@ div.main{
 }
 
 div.intro-main,
-div.locate-main{
+#sub-main{
     padding-top: 74px !important;
 }
 
 div.sub-banner{
-    max-width: 1920px;
+    width:100%;
     margin: 0 auto;
+    background: url('../images/sub/common/banner.png') no-repeat 40% 0;
+    background-size: cover;
+    height:160px;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
 }
 div.sub-banner > span > img{
     margin: 0 auto;
@@ -21,11 +27,12 @@ div.sub-banner > span > img{
 
 div.m-sub-banner{
     display: none;
+
 }
 
 div.sub-lnb{
     width: 100%;
-    height: 59px;
+    height: 60px;
     border-bottom: 1px #e5e5e5 solid;
 }
 
@@ -76,18 +83,20 @@ div.sub-lnb-wrap{
 
 .lnb-title{
     font-family: 'Nanum Gothic';
-    font-size: 19px;
+    font-size: 21px;
     font-weight: 800;
     word-spacing: -0.5px;
     color: #3a3a3a;
     margin: 0 0 0 1px !important;
-    padding: 20px 0;
+    line-height: 60px;
+    display: inline-block;
 }
 
 .lnb-area{
-    position: absolute;
-    top: 45.76%;
-    right: 0.19%;
+    float:right;
+    margin:0;
+    display:inline-block;
+    line-height: 60px;
 }
 
 .lnb-area > li{
@@ -97,7 +106,7 @@ div.sub-lnb-wrap{
     vertical-align: initial;
 }
 .lnb-area > li{
-    background: url("../images/sub/common/right_arrow.png") 100% 6px no-repeat;
+    background: url("../images/sub/common/right_arrow.png") 100% 26px no-repeat;
 }
 .lnb-area > li > a, .lnb-area > li > a:hover {
     color:#a7a7a7;
@@ -133,13 +142,17 @@ div.contents-area{
     color: #3a3a3a;
     margin: 0 0 11px 0 !important;
 }
-
+.content-detail-m{
+    display:none;
+}
 .content-subtitle{
     font-family: 'Nanum Gothic';
     font-size: 16px;
     font-weight: 500;
     color: #3a3a3a;
     margin: 0 0 29px 0 !important;
+    letter-spacing: -0.5px;
+    line-height:26px;
 }
 
 .content-detail{
@@ -153,74 +166,6 @@ div.contents-area{
 
 div.wrap_controllers{
     display: none;
-}
-
-@media (max-width: 1315px){
-    div.sub-lnb-wrap{
-        width: 80% !important;
-    }
-}
-
-@media (max-width: 855px){
-    div.sub-lnb-wrap{
-        width: 76% !important;
-    }
-}
-
-@media (max-width: 768px){
-    div.sub-lnb-wrap{
-        width: 93.5% !important;
-    }
-}
-
-@media (max-width: 640px){
-    div.sub-banner{
-        display: none;
-    }
-
-    div.m-sub-banner{
-        display: block;
-    }
-
-    div.m-sub-banner > span > img{
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 600px){
-    div.sub-lnb-wrap{
-        width: 92.5% !important;
-    }
-}
-
-@media (max-width: 550px){
-    div.sub-lnb-wrap{
-        width: 91.5% !important;
-    }
-}
-
-@media (max-width: 500px){
-    div.sub-lnb-wrap{
-        width: 90.5% !important;
-    }
-}
-
-@media (max-width: 450px){
-    div.sub-lnb-wrap{
-        width: 89.5% !important;
-    }
-}
-
-@media (max-width: 400px){
-    div.sub-lnb-wrap{
-        width: 88.5% !important;
-    }
-}
-
-@media (max-width: 350px){
-    div.sub-lnb-wrap{
-        width: 87.5% !important;
-    }
 }
 
 /*서브 페이지: 타워소개 > 파르나스 소개*/
@@ -254,7 +199,7 @@ div.intro-main-mid-contents{
 
 table.construction{
     float: right;
-    width: 474px;
+    max-width: 474px;
     text-align: left;
     padding-bottom: 99px;
 }
@@ -373,98 +318,75 @@ div.sub-add-wrap > .content-title{
 div.sub-add-wrap > .content-subtitle{
     margin-bottom: 59px !important;
 }
-
-@media (max-width: 1080px){
-    div.pc-mid-area{
-        display: none;
-    }
-
-    div.m-mid-area{
-        display: block;
-    }
-
-    div.m-mid-area > span > img{
-        margin: 0 auto 43px;;
-    }
-
-    .tower-model,
-    .construction{
-        float: none !important;
-        margin: 0 auto !important;
-    }
-
-    div.table-responsive{
-        border: 0 none;
-    }
-
-    .tower-model > img{
-        margin: 0 auto 27px;
-    }
-
-    .clearing{
-        padding-bottom: 80px !important;
-    }
-
-    div.intro-main-bot{
-        padding-top: 66px !important;
-    }
-
-    div.intro-main-bot-contents{
-        margin-top: 45px !important;
-    }
-
-    div.intro-main-bot-contents > span:first-child+span{
-        margin-bottom: 54px !important;
-    }
-
-    div.intro-main-bot-contents > span:last-child{
-        margin-bottom: 55px !important;
-    }
-
-    div.intro-main-add-contents > ul > li{
-        display: block;
-    }
-
-    div.intro-main-add-contents > ul > li > span > img{
-        margin: 15px auto;
-    }
+.award_box >span{
+    color:#9f7946;
+    font-size:37px;
 }
-@media (max-width: 767px){
-    #note_title{
-        width:100%;
-        padding-bottom:45px;
-    }
-    #note_content{
-        width:100%;
-        border:none;
-    }
-    #note_content > p > span, #note_content > p > small{
-        display:none;
-    }
-    .note{
-        padding:50px 0 58px;
-    }
 
+.award_title {
+    letter-spacing: -0.5px;
+    width:100%;
+    margin-bottom:25px;
+    display: inline-block;
 }
-@media (max-width: 500px){
-    .construction{
-        width: 96% !important;
-    }
+.award_title p{
+    line-height:25px;
 }
+.award_box p strong{
+    font-weight: 900;
+}
+.award_box p{
+    line-height: 25px;
+    letter-spacing: -0.5px;
+}
+.award_title p strong{
+    font-size:16px;
+    font-weight:900 !important;
+}
+
+
 
 
 /*서브 페이지: 타워소개 > 파르나스 찾아오시는길*/
 div.locate-main ul.lnb-area > li:first-child+li{
     width: 75px;
 }
+.m-ways li:first-child+li .way_circle{
+    line-height:20px;
+    padding-top:40px;
+}
+.m-ways .way_circle{
+    width:115px;
+    height:115px;
+    border-radius:50%;
+    color: #FFF;
+    text-align: center;
+    line-height: 115px;
+    display: inline-block;
+    font-size:16px;
+    font-weight:700;
+    vertical-align: middle;
 
+}
+.way_circle.gray{
+    background-color: #545454;
+}
+.way_circle.gold{
+    background-color: #aa8420;
+}
 div.sub-wrap{
     position: relative;
     max-width: 1024px;
     margin: 0 auto;
     text-align: center;
 }
-
+.maps ul{
+    text-align:right;
+    padding-right:38px;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
 div.locate-main ul.lnb-area > li:first-child+li{
     width: 75px;
 }
@@ -491,7 +413,7 @@ div.locate-main ul.lnb-area > li:first-child+li+li{
 
 .content-detail-locate{
     font-family: 'Nanum Gothic';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     color: #3f3f3f;
     margin: 0 0 25px 0 !important;
@@ -512,7 +434,8 @@ div.locate-area{
 
 div.locate-way{
     position: relative;
-    padding: 79px 0 193px;
+    padding: 79px 0 155px;
+    width:100%;
 }
 
 .way-title{
@@ -524,202 +447,29 @@ div.locate-way{
 }
 
 ul.pc-ways{
-    text-align: start !important;
-    margin-bottom: 0 !important;
-}
+    float:right;
+    width:65%;
 
-ul.pc-ways > li:first-child{
-    float: left;
+    padding-left:50px;
 }
-
-ul.pc-ways > li:first-child+li{
-    float: right;
+ul.pc-ways li:first-child{
+    margin-bottom:75px;
 }
-
-ul.pc-ways > li:last-child{
-    clear: left;
-    padding-top: 77px;
+ul.pc-ways li:first-child+li{
+    margin-bottom:56px;
 }
-
-ul.pc-ways > li:first-child,
-ul.pc-ways > li:last-child{
-    margin-left: 4px;
-}
-
-ul.pc-ways > li:first-child+li{
-    margin-right: 205px;
-}
-
 ul.m-ways{
     display: none;
 }
-
-@media (max-width: 1200px){
-    div.daum_map{
-        width: 900px !important;
-        margin: 0 auto;
-    }
-
-    div.locate-way{
-        position: relative;
-        padding: 79px 0 136px;
-    }
-
-    ul.pc-ways{
-        width: 70%;
-        margin: 0 auto;
-    }
-
-    ul.pc-ways > li{
-        margin: 0 !important;
-        padding: 1% 0 !important;
-        float: none !important;
-    }
-
-    div.sub-pc-options{
-        display: none;
-    }
-
-    div.sub-m-options{
-        display: block;
-        padding-bottom: 54px;
-    }
-
-    div.sub-m-options > ul{
-        width: 384px;
-        margin: 0 auto;
-    }
-
-    div.sub-m-options > ul > li{
-        display: inline-block;
-        padding: 0 6.5px !important;
-    }
+.minimap{
+    float:left;
+    width:35%;
+    display:inline-block;
 }
 
-@media (max-width: 1000px){
-    div.daum_map{
-        width: 750px !important;
-        margin: 0 auto;
-    }
 
-    ul.pc-ways{
-        display: none;
-    }
 
-    ul.m-ways{
-        display: block;
-        width: 70%;
-        margin: 0 auto;
-    }
 
-    ul.m-ways > li{
-        padding: 1% 0;
-    }
-}
-
-@media (max-width: 850px){
-    div.daum_map{
-        width: 650px !important;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 750px){
-    div.daum_map{
-        width: 600px !important;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 700px){
-    div.daum_map{
-        width: 550px !important;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 675px){
-    div.locate-way{
-        padding-top: 70px !important;
-    }
-
-    ul.m-ways{
-        display: block;
-        width: 93%;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 650px){
-    div.daum_map{
-        width: 500px !important;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 640px){
-    ul.lnb-area{
-        display: none;
-    }
-}
-
-@media (max-width: 600px){
-    div.daum_map{
-        width: 450px !important;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 550px){
-    div.daum_map{
-        width: 400px !important;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 500px){
-    div.daum_map{
-        width: 350px !important;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 450px){
-    div.sub-m-options > ul{
-        width: 90%;
-    }
-
-    div.sub-m-options > ul > li{
-        width: 24%;
-    }
-
-    div.daum_map{
-        width: 300px !important;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 400px){
-    div.daum_map{
-        width: 300px !important;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 350px){
-    div.locate-way{
-        padding-bottom: 55px;
-    }
-
-    div.sub-m-options{
-        display: none;
-    }
-
-    div.daum_map{
-        width: 250px !important;
-        margin: 0 auto;
-    }
-}
 /*서브 페이지: 타워소개 > 파르나스 갤러리*/
 
 .gallery_slide .left_btn, .gallery_slide .right_btn{
@@ -730,20 +480,28 @@ ul.m-ways{
     position: absolute;
     top: 50%;
     z-index: 5;
-    left:50%;
+
 }
 .gallery_slide .left_btn{
     margin-left:-20px;
+    left:50%;
     background: url('../images/sub/left_btn.png') no-repeat center center;
 }
 .gallery_slide .right_btn{
     margin-right:-20px;
+    right:50%;
     background: url('../images/sub/right_btn.png') no-repeat center center;
 }
-.gallery_slide .item{
-    width:1024px;
-    height:660px;
+.gallery_slide .item img, .gallery_slide{
+    max-height:660px;
+}
+.gallery_slide .item img, .gallery_slide > div, .gallery_slide .item, .gallery_slide .carousel-inner{
+    height:100%;
+}
+.gallery_slide{
     overflow:hidden;
+    width:100%;
+    max-width:1024px;
 }
 .gallery_slide #gallery_slide_box{
     border-bottom:3px #b49265 solid;
@@ -784,3 +542,256 @@ ul.m-ways{
     vertical-align: text-bottom;
 }
 /*서브 페이지: 시설안내 > 층별입주현황*/
+.floor_info .contents-area{
+    text-align: justify;
+}
+ul.floor_block{
+    display:inline-block;
+    margin-right:45px;
+    float:left;
+}
+ul.floor_block li:first-child{
+    border-top: 1px #e5e5e5 solid;
+}
+ul.floor_block li{
+    width:195px;
+    height:71px;
+    border: 1px #e5e5e5 solid;
+    border-top:none;
+    line-height: 68px;
+    color:#292929;
+    font-size:18px;
+    font-weight: 900;
+    cursor:pointer;
+    text-align:center;
+}
+ul.floor_block li:hover a{
+    font-weight: 900;
+
+}
+ul.floor_block li a{
+    color:#292929;
+}
+.floor_block .active{
+    background-color:#494949;
+    color:#FFF;
+    position:relative;
+}
+.floor_block .active a{
+    color:#FFF;
+}
+.floor_block .active:after{
+    content:"";
+    border-left:35px #494949 solid;
+    border-right: none;
+    border-top: 35px transparent solid;
+    border-bottom: 35px transparent solid;
+    color:#FFF;
+    position:absolute;
+    right:-35px;
+    top:0;
+    display:inline-block;
+    width:30px;
+    height:71px;
+}
+.floor_info .sub-top-wrap{
+    margin-bottom:95px;
+}
+.floor_company{
+    float:left;
+    width:780px;
+}
+.floor_company li{
+    width: 100%;
+    height:100px;
+    background-color:#f7f7f7;
+    margin-bottom:8px;
+    padding:20px 35px 20px 25px;
+}
+.floor_company .ci_logo{
+    border:1px #e6e6e6 solid;
+}
+.floor_company .ci_logo img{
+    width: 140px;
+    height: 60px;
+}
+.floor_company .details {
+    padding: 8px 20px;
+    font-size:13px;
+    line-height:21px;
+    display:inline-block;
+}
+.floor_company .details strong{
+    font-weight: 900;
+    font-size:19px;
+}
+.floor_num{
+    font-size:13px;
+    float:right;
+}
+.m_floor_company{
+    display:none;
+    width:100%;
+
+    text-align: center;
+}
+.m_floor_controller{
+    display:none;
+    text-align: center;
+}
+.m_floor_controller li{
+    display:inline-block;
+    vertical-align: top;
+}
+.m_floor_company li{
+    height:200px;
+    width:200px;
+    margin:0 7px;
+    display:inline-block;
+    cursor:pointer;
+}
+.m_floor_company li a{
+    color:#000;
+    font-size:12px;
+}
+.m_floor_company li a span{
+    padding:10px 0;
+    display:inline-block;
+}
+.m_floor_company li a strong{
+    font-size:14px;
+}
+.m_floor_company li img{
+    border:1px #e6e6e6 solid;
+    width:200px;
+    height:110px;
+    display:inline-block;
+}
+.m_floor_controller .controller_pages li{
+    width:30px;
+    height:30px;
+    border:1px #e4e4e4 solid;
+    display:inline-block;
+    line-height:30px;
+
+}
+.m_floor_controller li{
+    cursor:pointer;
+}
+.m_floor_controller li a{
+    color:#666;
+    font-size:12px;
+    font-family:"Dotum";
+
+}
+.controller_pages .active a{
+    font-weight: 900;
+}
+.m_floor_controller>li:first-child,
+.m_floor_controller>li:first-child+li,
+.m_floor_controller>li:first-child+li+li+li,
+.m_floor_controller>li:first-child+li+li+li+li {
+    width:30px;
+    height:30px;
+    border:1px #e4e4e4 solid;
+    display:inline-block;
+    background-color: #f8f8f8;
+    line-height: 30px;
+    color:#888;
+    font-size:10px;
+}
+.floor_info .contents-area{
+    min-width:660px;
+}
+.floor_company a{
+    width:100%;
+    height:100%;
+    display:inline-block;
+}
+/*층별안내 뷰페이지*/
+
+.floor_info_view .ci_box{
+    width:100%;
+    height:100px;
+    background-color: #f7f7f7;
+    padding:20px 35px 20px 25px;
+    text-align:justify;
+    margin-bottom:10px;
+}
+.floor_info_view .ci_box .details{
+    display:inline-block;
+    padding: 7px 22px;
+    font-size:13px;
+    line-height: 21px;
+}
+.floor_info_view .ci_box .details strong{
+    font-weight:900;
+    font-size:19px;
+}
+.floor_info_view .ci_box .floor_num{
+    float:right;
+}
+.floor_info_view .ci_image{
+    max-width:1024px;
+    width:100%;
+}
+.floor_info_view .ci_image img{
+    width:100%;
+}
+.about_company{
+    margin-top:20px;
+    font-size:14px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.floor_info_view .list_btn{
+    margin-top:75px;
+    margin-bottom:98px;
+}
+.floor_info_view .list_btn span{
+    display:inline-block;
+    width:110px;
+    height:45px;
+    background-color: #aa8420;
+}
+.floor_info_view .list_btn span a{
+    color:#FFF;
+    width:100%;
+    height:100%;
+    display:inline-block;
+    line-height:45px;
+    font-weight:700;
+    font-size:16px;
+}
+.floor_info_view div.contents-area{
+    padding: 35px 20px 0;
+}
+
+/*편의시설*/
+.convenience .contents-area{
+    padding :100px 20px 0;
+    margin-bottom:255px;
+    font-size:0;
+}
+.convenience .contents-area li img{
+    width:100%;
+}
+.convenience .contents-area li{
+    display:inline-block;
+    margin:0 2%;
+    width:46%;
+}
+.convenience .contents-area li a{
+    width:100%;
+    height:100%;
+    color:#FFF;
+    font-size:14px;
+    display:inline-block;
+}
+.convenience .contents-area li span{
+    display:block;
+    height:50px;
+    background-color: #3b3b3b;
+    line-height:50px;
+
+}

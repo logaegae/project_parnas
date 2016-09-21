@@ -26,6 +26,7 @@ $('.expand-area > li').on({
 
 
 // gnb: mobile version open & close
+$('#mobile-nav > li > ul').slideUp()
 $('#mobile-nav > li').on({
     // mouseenter: function () {
     //     // $(this).children('ul').fadeIn(350);
@@ -38,10 +39,9 @@ $('#mobile-nav > li').on({
     //     $(this).removeClass('change');
     // },
     click: function () {
-        $(this).children('ul').slideDown()
-        .parent().addClass('change')
-        .siblings().children('ul').slideUp()
-        .parent().removeClass('change');
+        $(this).addClass('change').siblings().removeClass('change');
+        $(this).children('ul').slideDown(0,'linear');
+        $(this).siblings().children('ul').slideUp(0,'linear');
     }
 })
 
