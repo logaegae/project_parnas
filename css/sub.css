@@ -1070,7 +1070,7 @@ img.notice_attatch{
     padding-right:0;
     text-align:center;
 }
-.resource .info_table.noti tbody td:first-child+td+td{
+.resource .info_table.noti tbody tr td:first-child+td+td{
     padding-left:25px;
     padding-right:25px;
     text-align:justify;
@@ -1097,4 +1097,7 @@ img.notice_attatch{
 }
 .faq .open td{
     font-weight:900 !important;
+}
+.faq .contents img.notice_new{
+        margin-top : -20px;
 }
