@@ -137,7 +137,7 @@
 
 
     <!-- main section -->
-    <div id="sub-main" class="intro-main">
+    <div id="sub-main" class="notice">
         <div class="container-fluid">
             <!-- main-area -->
             <!-- main top -->
@@ -165,9 +165,124 @@
                 <div class="sub-top-wrap">
                     <!-- contents area -->
                     <div class="contents-area">
+                        <div class="notice_top min450">
+                            <span>총 <span style="color:#c58f00">128</span>건</span>
+                            <span>
+                                <input type="text" placeholder="제목 + 내용 검색해 주세요">
+                                <button>검색</button>
+                            </span>
+                        </div>
+                        <div class="notice_wrapper min450" >
+                            <table class="info_table noti">
+                                <colgroup>
+                                    <col width="9%">
+                                    <col width="60%">
+                                    <col width="9%">
+                                    <col width="12%">
+                                    <col width="10%">
+                                </colgroup>
+
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>제목</th>
+                                        <th>첨부</th>
+                                        <th>게시일</th>
+                                        <th>조회</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <td><img class="notice_new" src="images/sub/notice_new.png" alt=""></td>
+                                        <td><a href="">파르나스 홈페이지 오픈</a></td>
+                                        <td><a href=""><img class="notice_attatch" src="images/sub/notice_attatch.png" alt=""></a></td>
+                                        <td>2016.09.22</td>
+                                        <td>123</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="">파르나스 홈페이지 오픈</a></td>
+                                        <td></td>
+                                        <td>2016.09.22</td>
+                                        <td>123</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="controller_box">
+                                <ul class="notice_controller">
+                                    <li><a href="" style="letter-spacing: -2.5px;">|&lt;</a></li>
+                                    <li><a href="">&lt;</a></li>
+                                    <li class="controller_pages">
+                                        <ul>
+                                            <li class="active"><a href="">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li><a href="">3</a></li>
+                                            <li><a href="">4</a></li>
+                                            <li><a href="">5</a></li>
+                                            <li><a href="">6</a></li>
+                                            <li><a href="">7</a></li>
+                                            <li><a href="">8</a></li>
+                                            <li><a href="">9</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">&gt;</a></li>
+                                    <li><a href="" style="letter-spacing: -2.5px;">&gt;|</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
                     </div>
-
+                    <!-- sns & option link: pc version -->
+                    <div class="sub-pc-options">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/twitter.png" alt="twitter icon" class="img-responsive">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/facebook.png" alt="facebook icon" class="img-responsive">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/blog.png" alt="naver blog icon" class="img-responsive">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/mobile_web.png" alt="mobile web icon" class="img-responsive">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- sns & option link: mobile version -->
+                    <div class="sub-m-options">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m_twitter.png" alt="twitter icon" class="img-responsive">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m_facebook.png" alt="facebook icon" class="img-responsive">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m_blog.png" alt="naver blog icon" class="img-responsive">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m_mobile_web.png" alt="mobile web icon" class="img-responsive">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -193,5 +308,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/common.js"></script>
+    <script type="text/javascript">
+    $('.controller_pages li').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        return false;
+    })
+    function colWidth(){
+        if($(window).width()<690){
+            $('.info_table.noti colgroup').children('col').eq(1).attr("width","50%");
+            $('.info_table.noti colgroup').children('col').eq(3).attr("width","17%");
+            $('.info_table.noti colgroup').children('col').eq(4).attr("width","15%");
+        }else{
+            $('.info_table.noti colgroup').children('col').eq(1).attr("width","60%");
+            $('.info_table.noti colgroup').children('col').eq(3).attr("width","12%");
+            $('.info_table.noti colgroup').children('col').eq(4).attr("width","10%");
+        }
+    }
+    colWidth();
+    $(window).resize(function(){
+        colWidth();
+    })
+    </script>
 </body>
 </html>

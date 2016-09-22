@@ -137,7 +137,7 @@
 
 
     <!-- main section -->
-    <div id="sub-main" class="faq">
+    <div id="sub-main" class="resource">
         <div class="container-fluid">
             <!-- main-area -->
             <!-- main top -->
@@ -153,11 +153,11 @@
                 <!-- lnb area -->
                 <div class="sub-lnb">
                     <div class="sub-lnb-wrap">
-                        <h2 class="lnb-title">공지사항</h2>
+                        <h2 class="lnb-title">자료실</h2>
                         <ul class="lnb-area">
                             <li><a href="main.html"><img src="images/sub/common/home_icon.png" alt="홈 바로 가기 아이콘"></a></li>
-                            <li style="width:52px"><a href="#">고객센터</a></li>
-                            <li><a href="#"><strong>공지사항</strong></a></li>
+                            <li style="width:63px"><a href="#">입주자전용</a></li>
+                            <li><a href="#"><strong>자료실</strong></a></li>
                         </ul>
                     </div>
                 </div>
@@ -175,33 +175,41 @@
                         <div class="notice_wrapper min450" >
                             <table class="info_table noti">
                                 <colgroup>
-                                    <col width="8%">
-                                    <col width="92%">
+                                    <col width="9%">
+                                    <col width="10%">
+                                    <col width="50%">
+                                    <col width="9%">
+                                    <col width="12%" min-width="min-width:77px;">
+                                    <col width="10%" min-width="min-width:50px;">
                                 </colgroup>
+
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>분류</th>
+                                        <th>제목</th>
+                                        <th>첨부</th>
+                                        <th>게시일</th>
+                                        <th>조회</th>
+                                    </tr>
+                                </thead>
                                 <tbody>
-                                    <tr class="title">
-                                        <td><img class="notice_new" src="images/sub/faq_q.png" alt=""></td>
-                                        <td>입주자 회원가입은 어떻게 하나요?</td>
+                                    <tr>
+
+                                        <td><img class="notice_new" src="images/sub/notice_new.png" alt=""></td>
+                                        <td>test</td>
+                                        <td><a href="">파르나스 홈페이지 오픈</a></td>
+                                        <td><a href=""><img class="notice_attatch" src="images/sub/notice_attatch.png" alt=""></a></td>
+                                        <td>2016.09.22</td>
+                                        <td>123</td>
                                     </tr>
-                                    <tr class="contents">
-                                        <td><img class="notice_new" src="images/sub/faq_a.png" alt=""></td>
-                                        <td>홈페이지 입주자 메뉴계정은 별도에 온라인에서 가입이 불가합니다</td>
-                                    </tr>
-                                    <tr class="title">
-                                        <td><img class="notice_new" src="images/sub/faq_q.png" alt=""></td>
-                                        <td>입주자 회원가입은 어떻게 하나요?</td>
-                                    </tr>
-                                    <tr class="contents">
-                                        <td><img class="notice_new" src="images/sub/faq_a.png" alt=""></td>
-                                        <td>홈페이지 입주자 메뉴계정은 별도에 온라인에서 가입이 불가합니다</td>
-                                    </tr>
-                                    <tr class="title">
-                                        <td><img class="notice_new" src="images/sub/faq_q.png" alt=""></td>
-                                        <td>입주자 회원가입은 어떻게 하나요?</td>
-                                    </tr>
-                                    <tr class="contents">
-                                        <td><img class="notice_new" src="images/sub/faq_a.png" alt=""></td>
-                                        <td>홈페이지 입주자 메뉴계정은 별도에 온라인에서 가입이 불가합니다</td>
+                                    <tr>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td><a href="">파르나스 홈페이지 오픈</a></td>
+                                        <td></td>
+                                        <td>2016.09.22</td>
+                                        <td>123</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -309,32 +317,20 @@
         $(this).addClass('active').siblings().removeClass('active');
         return false;
     })
-    // function colWidth(){
-    //     if($(window).width()<690){
-    //         $('.info_table.noti colgroup').children('col').eq(1).attr("width","50%");
-    //         $('.info_table.noti colgroup').children('col').eq(3).attr("width","17%");
-    //         $('.info_table.noti colgroup').children('col').eq(4).attr("width","15%");
-    //     }else{
-    //         $('.info_table.noti colgroup').children('col').eq(1).attr("width","60%");
-    //         $('.info_table.noti colgroup').children('col').eq(3).attr("width","12%");
-    //         $('.info_table.noti colgroup').children('col').eq(4).attr("width","10%");
-    //     }
-    // }
-    // colWidth();
-    // $(window).resize(function(){
-    //     colWidth();
-    // })
-
-    $(".faq .info_table .title").click(function(){
-        var aa = $(this).attr('class');
-        console.log(aa)
-        if(aa.indexOf('open') == -1){
-            $(this).next().slideDown(0);
-            $(this).addClass('open');
+    function colWidth(){
+        if($(window).width()<690){
+            $('.info_table.noti colgroup').children('col').eq(2).attr("width","50%");
+            $('.info_table.noti colgroup').children('col').eq(3).attr("width","17%");
+            $('.info_table.noti colgroup').children('col').eq(4).attr("width","15%");
         }else{
-            $(this).next().slideUp(0);
-            $(this).removeClass('open');
+            $('.info_table.noti colgroup').children('col').eq(2).attr("width","60%");
+            $('.info_table.noti colgroup').children('col').eq(3).attr("width","12%");
+            $('.info_table.noti colgroup').children('col').eq(4).attr("width","10%");
         }
+    }
+    colWidth();
+    $(window).resize(function(){
+        colWidth();
     })
     </script>
 </body>

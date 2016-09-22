@@ -17,13 +17,14 @@ a{text-decoration: none !important;}
 a:link, a:visited, a:active{color: #000;}
 
 img{vertical-align: top; border:0 none;}
-table{margin: 0 !important; border-spacing: 0; border-style: none: table-layout: fixed;}
+table{border-spacing: 0; border-style: none; table-layout: fixed;}
 body{position: relative; overflow-x: hidden; font-family: 'Nanum Gothic';}
 
 
 /*header & gnb*/
 #header{position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; height: 74px; background-color: #fff; border-bottom: 1px #f4f4f4 solid;}
 h1{float: left;}
+h4{font-size:17px;color:#3a3a3a;text-align:justify;font-weight:700;}
 nav.navbar{border: 0 none; background: rgba(255, 255, 255, 0.8);}
 nav.m-nav{display: none;}
 nav.navbar > div.container-fluid{padding: 0;position:relative;}

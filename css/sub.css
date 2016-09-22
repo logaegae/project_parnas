@@ -635,11 +635,13 @@ ul.floor_block li a{
 
     text-align: center;
 }
-.m_floor_controller{
+.notice_controller.m_floor{
     display:none;
+}
+.notice_controller{
     text-align: center;
 }
-.m_floor_controller li{
+.notice_controller li{
     display:inline-block;
     vertical-align: top;
 }
@@ -667,7 +669,7 @@ ul.floor_block li a{
     height:110px;
     display:inline-block;
 }
-.m_floor_controller .controller_pages li{
+.notice_controller .controller_pages li{
     width:30px;
     height:30px;
     border:1px #e4e4e4 solid;
@@ -675,10 +677,10 @@ ul.floor_block li a{
     line-height:30px;
 
 }
-.m_floor_controller li{
+.notice_controller li{
     cursor:pointer;
 }
-.m_floor_controller li a{
+.notice_controller li a{
     color:#666;
     font-size:12px;
     font-family:"Dotum";
@@ -687,10 +689,10 @@ ul.floor_block li a{
 .controller_pages .active a{
     font-weight: 900;
 }
-.m_floor_controller>li:first-child,
-.m_floor_controller>li:first-child+li,
-.m_floor_controller>li:first-child+li+li+li,
-.m_floor_controller>li:first-child+li+li+li+li {
+.notice_controller>li:first-child,
+.notice_controller>li:first-child+li,
+.notice_controller>li:first-child+li+li+li,
+.notice_controller>li:first-child+li+li+li+li {
     width:30px;
     height:30px;
     border:1px #e4e4e4 solid;
@@ -748,19 +750,43 @@ ul.floor_block li a{
     margin-top:75px;
     margin-bottom:98px;
 }
-.floor_info_view .list_btn span{
+.btn_gold{
     display:inline-block;
     width:110px;
     height:45px;
     background-color: #aa8420;
+    color:#FFF;
+    line-height:45px;
+    font-weight:700;
+    font-size:16px;
+    border:none;
 }
-.floor_info_view .list_btn span a{
+.btn_gold a{
     color:#FFF;
     width:100%;
     height:100%;
     display:inline-block;
     line-height:45px;
     font-weight:700;
+    font-size:16px;
+}
+.btn_white{
+    display:inline-block;
+    width:110px;
+    height:45px;
+    line-height:45px;
+    font-weight:500;
+    font-size:16px;
+    outline:1px #d5d5d5 solid;
+    text-align:center;
+}
+.btn_white a{
+    color:#292929 !important;
+    width:100%;
+    height:100%;
+    display:inline-block;
+    line-height:45px;
+    font-weight:500;
     font-size:16px;
 }
 .floor_info_view div.contents-area{
@@ -794,4 +820,281 @@ ul.floor_block li a{
     background-color: #3b3b3b;
     line-height:50px;
 
+}
+.info_table,.info_table td,.info_table th {
+    border: 1px solid #e6e6e6;
+}
+.info_table.noti,.info_table.noti td,.info_table.noti th {
+    border-left: none;
+    border-right: none;
+}
+.info_table{
+    border-collapse: collapse;
+    width:100%;
+    border-top:2px #aa8420 solid;
+}
+.info_table th{
+    background-color:#f8f8f8;
+    font-weight: 900;
+    text-align:center;
+    padding:18px 0;
+    color:#292929;
+
+}
+.info_table tbody td{
+    padding:18px 0;
+}
+.info_table tfoot td{
+    background-color: #f6f2e8;
+    font-weight: 900;
+    color:#292929;
+    padding:18px 0;
+}
+.mid_imgbox{
+    margin:55px 0 65px;
+}
+.top_imgbox img, .mid_imgbox img{
+    width:100%;
+}
+.bottom_p{
+    margin-top:10px;
+    color:#464646;
+    text-align: justify;
+    margin-bottom:140px;
+}
+/*임대정보*/
+.rent_info .top_table{
+    margin-bottom:95px;
+}
+#m_rentimg{
+    display:none;
+}
+/*임대문의*/
+.listStyle_circle{
+    background: url('../images/sub/liststyle_circle.png') no-repeat left 3px;
+    padding-left:20px;
+}
+ .listStyle_point{
+     background: url('../images/sub/liststyle_point.jpg') no-repeat left 8px;
+     padding-left:5px;
+ }
+.ask_head{
+    margin-bottom:20px;
+    padding-left:22px;
+}
+.ask_head input{
+    border:none;
+    width:190px;
+    height:30px;
+    padding-left:5px;
+}
+.rent_ask .info_table th{
+    text-align: justify;
+    padding:20px;
+}
+.rent_ask .info_table.f_table tbody td{
+    padding:10px 15px;
+    color:#454545;
+}
+.rent_ask .info_table tbody td select,
+
+.rent_ask .info_table tbody td input{
+    margin-right:6px;
+    padding-left:5px;
+    border:1px solid #d5d5d5;
+    height:30px;
+    vertical-align: middle;
+
+}
+.rent_ask .info_table.f_table tbody td label{
+    margin-right:33px;
+    vertical-align: middle;
+
+}
+select .opt_title{
+    display:none;
+    height:auto;
+    visibility: hidden;
+    overflow:hidden;
+}
+label{
+    margin-bottom:0;
+}
+input[type="checkbox"]{
+    margin:0 5px;
+}
+.rent_ask .info_table tbody .personal_head{
+    line-height: 50px;
+    padding:0 20px;
+}
+.personal_head span:first-child{
+    font-weight:bold;
+    font-size:15px;
+    color:#292929;
+    vertical-align: middle;
+
+}
+.personal_head span:first-child + span{
+    color:#666;
+}
+.personal{
+    margin-top:20px;
+}
+.personal .info_table{
+    border-top:1px solid #e6e6e6;
+}
+.info_table tbody td.personal_sentence{
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: 120px;
+    height: 120px;
+    display: block;
+}
+.rent_ask .s_table{
+    margin-bottom:44px;
+}
+.rent_ask .personal_btns{
+    margin-bottom:80px;
+    text-align:center;
+}
+.rent_ask .supports {
+    text-align: center;
+    width:100%;
+    margin-bottom:155px;
+    font-size: 0;
+}
+.rent_ask .supports > span{
+    display:inline-block;
+    width:31%;
+    margin:1%;
+}
+.rent_ask .supports span img{
+    width:100%;
+}
+.rent_ask .supports > span.mobile{
+    display:none;
+}
+/*공지사항*/
+.info_table.noti th{
+    padding:15px 0;
+}
+.info_table.noti{
+    border-top: 2px #555 solid;
+}
+.info_table.noti thead tr th:first-child{
+    border-top: 2px #aa8420 solid;
+}
+.notice_wrapper .notice_controller{
+    margin:60px 0 100px;
+}
+.info_table.noti tbody td{
+    padding:14px 0;
+    color:#464646;
+    font-weight:500;
+    position:relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.info_table.noti tbody td a{
+    color:#464646;
+}
+.info_table.noti tbody tr td:first-child+td{
+    padding-left:25px;
+    padding-right:25px;
+    text-align:justify;
+}
+.notice_top{
+    text-align:justify;
+    margin-bottom:40px;
+    height:37px;
+    line-height: 37px;
+    padding: 0 22px;
+}
+.notice_top span:first-child{
+    font-size:16px;
+    font-weight: bold;
+}
+.notice .info_table, .info_table td, .info_table th{
+    border-left: none;
+    border-right: none;
+}
+.notice_top span:first-child+span{
+    float:right;
+}
+.notice_top span:first-child+span input{
+    width:238px;
+    height:37px;
+    border:1px #ddd solid;
+    padding-left:20px;
+    color:#5f5f5f;
+    margin-left:5px;
+}
+.notice_top span:first-child+span button{
+    background: url('../images/sub/search_btn.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width:85px;
+    height:37px;
+    display: inline-block;
+    padding-left:16px;
+    color:#FFF;
+    font-weight:700;
+    border:none;
+}
+img.notice_new{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-13.5px;
+    margin-left:-13.5px;
+}
+img.notice_attatch{
+    vertical-align: middle;
+}
+.min450{
+    min-width:450px;
+}
+.application .info_table.noti tbody td:first-child+td{
+    padding-left:0;
+    padding-right:0;
+    text-align:center;
+}
+.application .info_table.noti tbody td:first-child+td+td{
+    padding-left:25px;
+    padding-right:25px;
+    text-align:justify;
+}
+.resource .info_table.noti tbody tr td:first-child+td{
+    padding-left:0;
+    padding-right:0;
+    text-align:center;
+}
+.resource .info_table.noti tbody td:first-child+td+td{
+    padding-left:25px;
+    padding-right:25px;
+    text-align:justify;
+}
+.faq .info_table .title{
+    cursor:pointer;
+}
+.faq .info_table .contents{
+    display:none;
+}
+.faq .info_table .contents td{
+    background-color: #f8f8f8;
+    color:#666666
+}
+.faq .info_table .contents td:first-child{
+    padding: 25px 0 40px;
+}
+.faq .info_table .contents td:first-child+td{
+    padding: 25px 10px 40px;
+}
+.faq .info_table.noti tbody tr td:first-child+td{
+    padding-left:0;
+    padding-right:0;
+}
+.faq .open td{
+    font-weight:900 !important;
 }
