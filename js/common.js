@@ -3,7 +3,7 @@ $('#pc-nav').on({
     mouseenter: function () {
         $(this).find('ul').css({
 
-            'height': '222px',
+            'height': '122px',
             'margin': '16px 0 25px'
         })
     },
@@ -47,9 +47,3 @@ $('#mobile-nav > li').on({
 
 
 // prepare
-$('.prepare').on({
-    click: function () {
-        alert("현재 준비 중입니다.");
-        return;
-    }
-})

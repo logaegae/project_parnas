@@ -130,7 +130,7 @@
 
 
     <!-- main section -->
-    <div id="sub-main" class="notice_view">
+    <div id="sub-main" class="aircondition">
         <div class="container-fluid">
             <!-- main-area -->
             <!-- main top -->
@@ -146,11 +146,11 @@
                 <!-- lnb area -->
                 <div class="sub-lnb">
                     <div class="sub-lnb-wrap">
-                        <h2 class="lnb-title">공지사항</h2>
+                        <h2 class="lnb-title">냉,난방신청</h2>
                         <ul class="lnb-area">
                             <li><a href="main.html"><img src="../images/sub/common/home_icon.png" alt="홈 바로 가기 아이콘"></a></li>
-                            <li style="width:52px"><a href="#">고객센터</a></li>
-                            <li><a href="#"><strong>공지사항</strong></a></li>
+                            <li style="width:63px"><a href="#">입주자전용</a></li>
+                            <li><a href="#"><strong>냉,난방신청</strong></a></li>
                         </ul>
                     </div>
                 </div>
@@ -158,40 +158,129 @@
                 <div class="sub-top-wrap">
                     <!-- contents area -->
                     <div class="contents-area">
-                        <div class="noti_view">
-                            <table>
-                                <colgroup>
-                                    <col width="11%">
-                                    <col width="39%">
-                                    <col width="11%">
-                                    <col width="39%">
-                                </colgroup>
-                                <tbody>
-                                    <tr class="notice_view_title">
-                                        <th>제목</th>
-                                        <td colspan="3">홈페이지 사용이 편리합니다</td>
-                                    </tr>
-                                    <tr>
-                                        <th>작성자</th>
-                                        <td>홍길동</td>
-                                        <th>게시일</th>
-                                        <td>2016.08.08</td>
-                                    </tr>
-                                    <tr>
-                                        <th>첨부파일</th>
-                                        <td><a href=""><img src="../images/sub/notice_attatch.png" alt="" style="margin-right:5px;vertical-align:middle;">조감도.zip</a></td>
-                                        <th>조회수</th>
-                                        <td>2900</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="content" colspan="4">홈페이지 사용이 편리합니다<br>홈페이지 사용이 편리합니다</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="list_btn">
-                                <span class="btn_gold"><a href="notice.html">목록</a></span>
-                            </div>
-                        </div>
+                        <h4 class="listStyle_circle">파르나스타워 냉,난방 시스템 관련 내용을 적어주세요 </h4>
+                        <form action="">
+                            <fieldset class="text-left">
+                                <div class="ask_head">
+                                    <legend class="sr-only">냉난방 시스템 문의</legend>
+                                </div>
+                                <table class="info_table f_table">
+                                    <colgroup>
+                                        <col width="12%">
+                                        <col width="38%">
+                                        <col width="12%">
+                                        <col width="38%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>구분</th>
+                                            <td style="border-top: 2px solid #555555;" colspan="3">
+                                                <input type="radio" name="class" value="" id="ac"><label for="ac">냉방</label>
+                                                <input type="radio" name="class" value="" id="heater"><label for="heater">난방</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>회사명</th>
+                                            <td><input type="text" name="" style="width:80%;max-width:200px;"></td>
+                                            <th>담당자</th>
+                                            <td><input type="text" name="" style="width:80%;max-width:200px;"></td>
+                                        </tr>
+                                        <tr colspan="3">
+                                            <th>층</th>
+                                            <td colspan="3">
+                                                <select name="" id="" style="width:20%;max-width:110px;">
+                                                    <option class="opt_title">선택</option>
+                                                    <option value="1">1층</option>
+                                                    <option value="2">2층</option>
+                                                    <option value="3">3층</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>제목</th>
+                                            <td colspan="3"><input type="text" name="" style="width:80%;max-width:742px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>전화번호</th>
+                                            <td colspan="3">
+                                                <select name="" id="" style="width:20%;max-width:110px;">
+                                                    <option class="opt_title">선택</option>
+                                                    <option value="010">010</option>
+                                                    <option value="011">011</option>
+                                                    <option value="016">016</option>
+                                                    <option value="019">019</option>
+                                                </select>
+                                                <input type="text" name="" style="width:20%;max-width:110px;">
+                                                <input type="text" name="" style="width:20%;max-width:110px;">
+                                            </td>
+                                        </tr>
+                                        <tr class="last_row">
+                                            <th>시간</th>
+                                            <td colspan="3">
+                                                <span style="margin-right:44px;">
+                                                    <span>시작시간 </span>
+                                                    <select name="" id="" style="width:35%;max-width:100px;">
+                                                        <option class="opt_title">날짜선택</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                    <input type="text" name="" style="width:35%;max-width:110px;">
+                                                </span>
+                                                <span style="margin-right:44px;">
+                                                    <span>끝시간</span>
+                                                    <select name="" id="" style="width:35%;max-width:100px;">
+                                                        <option class="opt_title">날짜선택</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                    <input type="text" name="" style="width:35%;max-width:110px;">
+                                                </span>
+                                                <span style="display:inline-block">
+                                                    <input type="checkbox" name="class" value="" id="except"><label for="except">매주 주말 제외</label>
+                                                </span>
+
+
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="personal">
+                                    <table class="info_table s_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="personal_head">
+                                                    <span>개인정보 수집·이용 동의서</span>
+                                                    <span class="pull-right">
+                                                        <label for="personal_agree">정보제공 동의
+                                                            <input id="personal_agree" type="checkbox">
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="personal_sentence">
+                                                    <div style="color:#666;font-size:13px;">
+                                                        개인정보의 수집·이용 목적]파르나스타워 홈페이지를 통해 접수된 부정행위 제보, 불편사항, 건의, 문의 등
+                                                        신고·상담의 원활한 처리를 위해 귀하의 개인정보를 수집·이용 등 처리합니다.<br>
+                                                        [수집·이용하는 개인정보 항목]신고인의 성명, 생년월일, 연락처(이메일주소, 전화번호), 주소, 신문고
+                                                        내용(업체·지점명, 전화번호, 주소 등 포함) 등<br>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="personal_btns">
+                                    <input type="submit" value="글등록" class="btn_gold">
+                                    <span class="btn_white"><a href="">취소</a></span>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
                     <!-- sns & option link: pc version -->
                     <div class="sub-pc-options">
@@ -268,5 +357,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/common.js"></script>
+    <script type="text/javascript">
+        function colWidth(){
+            if($(window).width()<800){
+                $('.info_table colgroup').children('col').eq(0).attr("width","20%");
+                $('.info_table colgroup').children('col').eq(1).attr("width","30%");
+                $('.info_table colgroup').children('col').eq(2).attr("width","20%");
+                $('.info_table colgroup').children('col').eq(3).attr("width","30%");
+
+            }else{
+                $('.info_table colgroup').children('col').eq(0).attr("width","12%");
+                $('.info_table colgroup').children('col').eq(1).attr("width","38%");
+                $('.info_table colgroup').children('col').eq(2).attr("width","12%");
+                $('.info_table colgroup').children('col').eq(3).attr("width","38%");
+
+            }
+        }
+        colWidth();
+        $(window).resize(function(){
+            colWidth();
+        })
+    </script>
 </body>
 </html>

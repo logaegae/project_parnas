@@ -1,7 +1,10 @@
 @media (max-width: 1500px){
     div.layout-wrap{
-        width: 80%;
+        width: 85%;
     }
+    ul.navbar-nav > li:first-child {
+    width: 20%;
+}
 
 }
 @media (max-width: 1315px){
@@ -10,6 +13,20 @@
     }
 }
 @media (max-width: 1200px){
+    .application_write .contents-area{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .aircondition .contents-area{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .aircondition .personal_btns{
+        margin-bottom:65px;
+    }
+    .login_wrapper{
+        margin-bottom:130px;
+    }
     .rent_ask .supports{
         margin-bottom:0;
     }
@@ -18,7 +35,7 @@
         margin: 0 auto;
     }
     .convenience .contents-area{
-        margin-bottom: 465px;
+        margin-bottom: 180px;
     }
     div.locate-way{
         position: relative;
@@ -177,6 +194,9 @@
     .floor_company{
         display:none;
     }
+    .floor_company.showon{
+        display:none;
+    }
     .m_floor_company{
         display:block;
     }
@@ -222,8 +242,17 @@
         display: none !important;
     }
 
+
 }
 @media (max-width: 768px){
+    .convenience .contents-area{
+        text-align: justify;
+    }
+    .convenience .contents-area li {
+        width: 46%;
+        margin-bottom: 30px;
+        text-align:center;
+    }
     .rent_ask .supports > span.pc{
         display:none;
     }
@@ -361,6 +390,10 @@
     }
     .way_detail{
         width:70%;
+    }
+    .login .login_box>span{
+        display:block;
+        width:100%;
     }
 
 }
@@ -530,6 +563,23 @@
 }
 
 @media (max-width: 500px){
+    div.m-quick-menu > ul.firstLine .aling_mid > span strong {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    div.m-quick-menu > ul.secondLine > li:first-child strong {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    div.m-quick-menu > ul.secondLine > li:first-child+li strong{
+        font-size: 13px;
+    }
+    div.m-quick-menu > ul.secondLine > li:first-child+li .box_sub{
+        font-size:10px;
+    }
+    div.m-quick-menu > ul.firstLine .aling_mid .box_sub {
+        font-size: 11px;
+    }
     .rent_ask .supports > span.mobile{
         display:block;
         width:60%;
