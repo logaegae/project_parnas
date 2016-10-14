@@ -83,7 +83,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1><a href="#"><img src="../images/common/logo.png" alt="파르나스 타워 로고"></a></h1>
+                    <h1><a href="main.html"><img src="../images/common/logo.png" alt="파르나스 타워 로고"></a></h1>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul id="mobile-nav" class="nav navbar-nav navbar-right">
@@ -162,32 +162,35 @@
                         <p class="content-detail-locate">TEL : 02-559-7094</p>
                         <div class="maps">
                             <ul>
-                                <li><a href="http://map.daum.net/?urlX=513447&urlY=1113843&itemId=8161840&q=%EA%B7%B8%EB%9E%9C%EB%93%9C%EC%9D%B8%ED%84%B0%EC%BB%A8%ED%8B%B0%EB%84%A8%ED%83%88%20%EC%84%9C%EC%9A%B8%ED%8C%8C%EB%A5%B4%EB%82%98%EC%8A%A4&srcid=8161840&map_type=TYPE_MAP&from=roughmap"><img src="../images/sub/locate/daum_map.png" alt="다음 지도"></a></li>
+                                <li><a href="http://map.daum.net/?urlX=513589&urlY=1113775&itemId=27373670"><img src="../images/sub/locate/daum_map.png" alt="다음 지도"></a></li>
                                 <li><a href="http://map.naver.com/?dlevel=11&pinType=site&pinId=34354706&x=127.0612026&y=37.5096482&enc=b64"><img src="../images/sub/locate/naver_map.png" alt="네이버 지도"></a></li>
                                 <li><a href="https://www.google.co.kr/maps/search/%ED%8C%8C%EB%A5%B4%EB%82%98%EC%8A%A4+%ED%83%80%EC%9B%8C/@37.5089993,127.0586214,17z/data=!3m1!4b1"><img src="../images/sub/locate/google_map.png" alt="구글 지도"></a></li>
                             </ul>
                         </div>
                     </div>
+                    <!-- 37.510344, 127.061006 -->
                     <!-- daum map load -->
                     <div class="locate-area">
-                    <!--
-                    * Daum 지도 - 약도서비스
-                    * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
-                    * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
-                    -->
-                    <!-- 1. 약도 노드 -->
-                    <div id="daumRoughmapContainer1469597541149" class="root_daum_roughmap root_daum_roughmap_landing daum_map"></div>
-                    <!-- 2. 설치 스크립트 -->
-                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
-                    <!-- 3. 실행 스크립트 -->
-                    <script charset="UTF-8">
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1469597541149",
-                        "key" : "c7vm",
-                        "mapWidth" : "1024",
-                        "mapHeight" : "579"
-                    }).render();
-                    </script>
+                        <!--
+                        	* Daum 지도 - 약도서비스
+                        	* 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+                        	* 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+                        -->
+                        <!-- 1. 약도 노드 -->
+                        <div id="daumRoughmapContainer1476447510349" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                        <!-- 2. 설치 스크립트 -->
+                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+                        <!-- 3. 실행 스크립트 -->
+                        <script charset="UTF-8">
+                        	new daum.roughmap.Lander({
+                        		"timestamp" : "1476447510349",
+                        		"key" : "djs5",
+                        		"mapWidth" : "1024",
+                        		"mapHeight" : "579"
+                        	}).render();
+                        </script>
                 </div>
             </div>
             <!-- transport -->

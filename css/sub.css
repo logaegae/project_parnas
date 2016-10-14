@@ -80,7 +80,6 @@ div.sub-m-options{
 div.sub-lnb-wrap{
     position: relative;
 }
-
 .lnb-title{
     font-family: 'Nanum Gothic';
     font-size: 21px;
@@ -172,13 +171,6 @@ div.wrap_controllers{
 div.intro-main ul.lnb-area > li:first-child+li{
     width: 75px;
 }
-
-div.pc-mid-area > a{
-    display: block;
-    width: 27.24%;
-    margin: 43px auto 0;
-}
-
 div.m-mid-area{
     display: none;
 }
@@ -1029,7 +1021,7 @@ input[type="checkbox"]{
     border-top: 2px #aa8420 solid;
 }
 .notice_wrapper .notice_controller{
-    margin:60px 0 100px;
+    margin:60px 0 50px;
 }
 .info_table.noti tbody td{
     padding:14px 0;
@@ -1050,7 +1042,7 @@ input[type="checkbox"]{
 }
 .notice_top{
     text-align:justify;
-    margin-bottom:40px;
+    margin-bottom:20px;
     height:37px;
     line-height: 37px;
     padding: 0 22px;
@@ -1337,4 +1329,30 @@ img.notice_attatch{
 }
 .rent_info .mid_box{
     margin:13px 0 100px;
+}
+.intro-main .pc-mid-area .boxlf{
+    font-size: 0;
+}
+.intro-main .pc-mid-area .boxlf>span{
+    color:#FFF;
+    letter-spacing: -0.5px;
+    display:inline-block;
+    font-size: 14px;
+    vertical-align: top;
+}
+.intro-main .pc-mid-area .boxlf strong {
+    color:#b49265;
+}
+.intro-main .pc-mid-area .boxlf>span:first-child{
+    width:33.33%;
+    padding:30px 0 40px 38px;
+    background-color: #000;
+    line-height: 20px;
+    height:286px;
+}
+.intro-main .pc-mid-area .boxlf>span:first-child+span{
+    width:66.66%;
+    padding:30px 38px 40px;
+    background-color: #b49265;
+    line-height: 24px;
 }

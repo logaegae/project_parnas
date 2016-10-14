@@ -18,7 +18,7 @@ a:link, a:visited, a:active{color: #000;}
 
 img{vertical-align: top; border:0 none;}
 table{border-spacing: 0; border-style: none; table-layout: fixed;}
-body{position: relative; overflow-x: hidden; font-family: 'Nanum Gothic';}
+body{position: relative; overflow-x: hidden; font-family: 'Nanum Gothic';word-break:keep-all; }
 
 
 /*header & gnb*/

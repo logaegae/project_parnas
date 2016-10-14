@@ -80,13 +80,6 @@
     div.sub-banner{
         height: 140px;
     }
-    div.pc-mid-area{
-        display: none;
-    }
-
-    div.m-mid-area{
-        display: block;
-    }
 
     div.m-mid-area > span > img{
         margin: 0 auto 43px;;
@@ -145,7 +138,30 @@
     #footer > address{margin-top: 50px;}
 }
 @media (max-width: 1000px){
-
+    .intro-main .pc-mid-area .boxlf>span:first-child{
+        height:165px;
+            padding: 30px 38px 40px 38px
+    }
+    .intro-main .pc-mid-area .boxlf>span:first-child span:first-child{
+        float:left;
+        width:50%;
+    }
+    .intro-main .pc-mid-area .boxlf>span:first-child span:first-child+span{
+        float:right;
+        width:50%;
+    }
+    .intro-main .pc-mid-area{
+        padding: 0 10%;
+    }
+    .intro-main .pc-mid-area .boxlf>span{
+        display:block;
+    }
+    .intro-main .pc-mid-area .boxlf>span:first-child{
+        width:100%;
+    }
+    .intro-main .pc-mid-area .boxlf>span:first-child+span{
+        width:100%;
+    }
     div.maps ul{
         text-align: center;
         padding:0;
@@ -321,7 +337,7 @@
 
     ul.navbar-nav > li > a{
         display: block;
-        width: 70px;
+        width: 130px;
         padding: 26px 0 22px !important;
         margin-left: 32px;
     }
@@ -536,10 +552,23 @@
     .gallery_slide .left_btn,.gallery_slide .right_btn{
         background-size: 70%;
     }
+    .intro-main .pc-mid-area{
+        padding:0;
+    }
 }
 
 @media (max-width: 532px){
-
+    .intro-main .pc-mid-area .boxlf>span:first-child span:first-child{
+        float:none;
+        width:100%;
+    }
+    .intro-main .pc-mid-area .boxlf>span:first-child span:first-child+span{
+        float:none;
+        width:100%;
+    }
+    .intro-main .pc-mid-area .boxlf>span:first-child{
+        height:225px;
+    }
     ul.navbar-nav > li > ul{
         height: 65px;
     }
@@ -609,9 +638,11 @@
     div.sub-m-options > ul{
         width: 90%;
     }
-
     div.sub-m-options > ul > li{
         width: 24%;
+    }
+    .oxs{
+        overflow-x:scroll;
     }
     .convenience .contents-area li{
         display:block;
@@ -647,7 +678,11 @@
         padding: 7px 10px;
     }
 }
-
+@media (max-width: 360px){
+    .intro-main .pc-mid-area .boxlf>span:first-child{
+        height: 260px;
+    }
+}
 @media (max-width: 350px){
     .floor_info_view .ci_box{
         padding: 20px 15px 20px 10px;
